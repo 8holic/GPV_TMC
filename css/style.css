@@ -247,6 +247,10 @@ img {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .visit-note {
   background: var(--purple);
   color: #fff;
@@ -467,6 +471,23 @@ img {
 }
 
 .member {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.member-photo {
+  overflow: hidden;
+}
+
+.member-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.member-info {
   padding: 1.4rem 1.5rem;
 }
 
@@ -481,6 +502,13 @@ img {
 .member h3 {
   margin-top: 0.4rem;
   margin-bottom: 0.5rem;
+}
+
+.member h3 em {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--muted);
+  font-size: 0.85em;
 }
 
 .member-contact {
@@ -535,7 +563,11 @@ img {
 @media (max-width: 768px) {
   .grid-2,
   .grid-3 {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-5 {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .site-header .container {
