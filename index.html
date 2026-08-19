@@ -16,12 +16,9 @@
         Gek Poh Ville
       </div>
       <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#why">Why Join</a>
-        <a href="#updates">Meetings</a>
-        <a href="#updates">Updates</a>
+        <a href="index.html">Home</a>
+        <a href="members.html">Meet Our Members</a>
         <a href="visit.html">Visit Us</a>
-        <a href="visit.html" class="nav-cta">Join Us</a>
       </nav>
     </div>
   </header>
@@ -33,46 +30,15 @@
       <span class="kicker">Toastmasters International</span>
       <h1>Gek Poh Ville Toastmasters Club</h1>
       <p>Where confident speakers and strong leaders are made. Join us in a friendly, supportive environment to grow your communication and leadership skills.</p>
-      <a href="#meeting" class="btn btn-gold">Attend a Meeting</a>
+      <a href="#updates" class="btn btn-gold">Attend a Meeting</a>
       <a href="#updates" class="btn btn-outline">See What's New</a>
     </div>
   </section>
 
-  <section class="section section-alt split-section" id="updates">
-    <div class="container">
-      <div class="split">
-        <div class="split-col">
-          <div class="section-head text-left">
-            <h2>Meeting Details</h2>
-          </div>
-          <div class="meeting">
-            <ul>
-              <li><strong>Day:</strong> Every 1st Wednesday of the Month</li>
-              <li><strong>Time:</strong> 8:00 pm – 10:00 pm</li>
-              <li><strong>Venue:</strong> Blk 732 Jurong West St 73, Singapore</li>
-              <li><strong>Language:</strong> English (all levels welcome)</li>
-            </ul>
-            <iframe class="map" src="https://maps.google.com/maps?q=Blk%20732%20Jurong%20West%20St%2073%2C%20Singapore&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="220" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <a href="mailto:gekpohville988810@gmail.com" class="btn btn-gold">Register Your Interest</a>
-          </div>
-        </div>
-        <div class="split-col">
-          <div class="section-head text-left">
-            <h2>Updates</h2>
-            <p>Follow our latest happenings, meetings and member stories.</p>
-          </div>
-          <div class="updates-wrap">
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGPVTMC&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="about">
+  <section class="section" id="why">
     <div class="container">
       <div class="section-head">
-        <h2>What to Expect</h2>
+        <h2>Why Join Us</h2>
         <p>A welcoming space where every meeting helps you grow — one step at a time.</p>
       </div>
       <div class="grid grid-3">
@@ -95,27 +61,75 @@
     </div>
   </section>
 
-  <section class="section section-alt" id="why">
+  <section class="section" id="expect">
     <div class="container">
       <div class="section-head">
-        <h2>Why Join Us</h2>
-        <p>Whether you're a student, a working professional, or someone simply looking to grow, there's a place for you here.</p>
+        <h2>What to Expect</h2>
+        <p>Here's how a typical GPV TMC meeting unfolds.</p>
       </div>
-      <div class="grid grid-3">
-        <div class="card">
-          <div class="icon">🚀</div>
-          <h3>Accelerate Your Growth</h3>
-          <p>Follow structured pathways that take you from your first table topic to a confident keynote.</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-card">
+            <h3>Ice Breakers</h3>
+            <p>Practice speaking in front of everyone.</p>
+          </div>
+          <span class="timeline-dot">1</span>
         </div>
-        <div class="card">
-          <div class="icon">💬</div>
-          <h3>Boost Your Career</h3>
-          <p>Communication and leadership are the skills employers value most — build them here.</p>
+        <div class="timeline-item">
+          <div class="timeline-card">
+            <h3>Prepared Speeches &amp; Evaluation</h3>
+            <p>Listen to speeches from our members and the potential for improvement <em>(for members only)</em>.</p>
+          </div>
+          <span class="timeline-dot">2</span>
         </div>
-        <div class="card">
-          <div class="icon">🏅</div>
-          <h3>Recognised Achievements</h3>
-          <p>Earn awards and certifications recognised worldwide by Toastmasters International.</p>
+        <div class="timeline-item">
+          <div class="timeline-card">
+            <h3>Network</h3>
+            <p>Enjoy some snacks while speaking to our existing members.</p>
+          </div>
+          <span class="timeline-dot">3</span>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-card">
+            <h3>Table Topics</h3>
+            <p>Practice your impromptu speaking skills.</p>
+          </div>
+          <span class="timeline-dot">4</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt split-section" id="updates">
+    <div class="container">
+      <div class="split">
+        <div class="split-col">
+          <div class="section-head text-left">
+            <h2>Meeting Details</h2>
+          </div>
+          <div class="meeting">
+            <div class="meeting-next">
+              <span class="next-label">Next Meeting</span>
+              <strong>Every 1st Wednesday · 8:00 pm – 10:00 pm</strong>
+              <span class="next-date" id="next-meeting-date"></span>
+            </div>
+            <ul>
+              <li><strong>Venue:</strong> Blk 732 Jurong West St 73, Singapore</li>
+              <li><strong>Language:</strong> English (all levels welcome)</li>
+              <li><strong>Visitors:</strong> Free of charge — no obligation to join</li>
+            </ul>
+            <iframe class="map" src="https://maps.google.com/maps?q=Blk%20732%20Jurong%20West%20St%2073%2C%20Singapore&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="220" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a href="visit.html" class="btn btn-gold">Plan Your Visit</a>
+          </div>
+        </div>
+        <div class="split-col">
+          <div class="section-head text-left">
+            <h2>Updates</h2>
+            <p>Follow our latest happenings, meetings and member stories.</p>
+          </div>
+          <div class="updates-wrap">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FGPVTMC&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -128,5 +142,25 @@
     </div>
   </footer>
 
+  <script>
+    (function () {
+      var el = document.getElementById('next-meeting-date');
+      if (!el) return;
+
+      function firstWednesday(y, m) {
+        var d = new Date(y, m, 1);
+        return new Date(y, m, 1 + ((3 - d.getDay() + 7) % 7));
+      }
+
+      var now = new Date();
+      var next = firstWednesday(now.getFullYear(), now.getMonth());
+      var meetingEnd = new Date(now.getFullYear(), now.getMonth(), next.getDate(), 20, 0, 0);
+      if (meetingEnd.getTime() < now.getTime()) {
+        next = firstWednesday(now.getFullYear(), now.getMonth() + 1);
+      }
+
+      el.textContent = 'Next meeting: ' + next.toLocaleDateString('en-SG', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+    })();
+  </script>
 </body>
 </html>
